@@ -27,7 +27,7 @@ li.menu {
     padding: 30px;}
 
 #menu {
-        background-color:rgb(182, 182, 182);
+        background-color:rgb(226, 215, 215);
         height: 45px;
         margin: 15px;
         text-align: center;}
@@ -39,7 +39,7 @@ li.box {
     width: 10%;
     float: left;
     text-align: center;
-    background-color: rgb(177, 171, 119);
+    background-color: rgba(185, 183, 164, 0.897);
     margin: 10px auto 10px auto;
     height: 150px;
     -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
