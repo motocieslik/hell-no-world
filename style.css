@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Verdana, sans-serif;
-    margin: 0 auto;
     background-color: black;
 }
 H1 {
@@ -18,8 +17,9 @@ H1.H1red {
 * {text-decoration:none}
 
 #header {
-    height: 150px;
+    height: 100%;
     background-image: url("images/124494-architecture-3d-dark-4k.jpg");
+    overflow: auto;
 }
 li.menu {
     display: inline;
@@ -28,15 +28,16 @@ li.menu {
 }
 #menu {
         background-color:rgb(226, 215, 215);
-        height: 45px;
+        height: 100%;
         margin: 15px;
         text-align: center;
+        
 }
 li.box {
     display: inline;
-    padding: 25px 50px;
+    padding: 5px 5px;
     border: 2px solid black;
-    width: 10%;
+    width: 150px;
     float: left;
     text-align: center;
     background-color: rgba(185, 183, 164, 0.897);
@@ -45,6 +46,7 @@ li.box {
     -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     -webkit-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    overflow:hidden;
 }
 #footer {
 margin-top: 20px;
@@ -53,14 +55,17 @@ word-spacing: 30px;
 }
 #first {
 width: 100%;
-height: 450px;
+height:100%;
+overflow: auto;
 background-color: whitesmoke;
 }
 #second {
 width: 80%;
 margin: auto;
-height: 600px;
+height: 100%;
+overflow: auto;
 background-color: rgb(208, 240, 240);
+display: block;
 }
 
 blackquote {
@@ -79,6 +84,7 @@ blackquote {
     height: 1000px;
 background-color: white;
 padding: 10px 10px 10px 10px;
+overflow: hidden;
 }
 
 article {
@@ -89,12 +95,13 @@ article {
 p.half {
     width: 50%;
     height: 140px;
-    background-color: rgb(197, 194, 194);
+    overflow: auto;
+    background-color: rgb(221, 201, 201);
 }
 #fourth {
     background-color:white;
     width: 100%;
-    height: 400px;
+    height: 100%;
     padding: 20px;
 }
 #fifth {
@@ -109,8 +116,7 @@ td.description {
     margin: 0px;
     width: 800px;
 }
-tr.border {
-   
+tr.border {  
     border: solid 2px darkblue;
     border-radius: 5px;  /* nie dziala */
 }
