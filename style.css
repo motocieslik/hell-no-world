@@ -118,3 +118,32 @@ select {
     height: 4em;
     width: 10em;
 }
+#seventh {
+    width:100%;
+    background-color: white;
+}
+p.article1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(197, 197, 197);
+    display: block;
+    z-index: 1;
+    position: relative; /* bez tego z-index nie zadziała*/
+   
+}
+p.article2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(101, 101, 156);
+    margin-top: -50px;
+    margin-left: 50px;
+    display: block;
+    position: relative; /* bez tego z-index nie zadziała*/
+}
+ul.article3 {
+    position: relative;
+    top: -170px;
+    left:300px;
+    width: 250px;
+    background-color: cornflowerblue;
+}
