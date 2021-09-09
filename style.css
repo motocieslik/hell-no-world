@@ -51,10 +51,56 @@ li.box {
     box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     overflow:hidden;
 }
-#footer {
-    margin-top: 20px;
+li.box1 {
+    display: inline;
+    padding: 10px 10px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 90px 90px;  /* cicle*/
+    float: left;
     text-align: center;
-    word-spacing: 30px;
+    background-color: rgba(185, 183, 164, 0.897);
+    margin: 15px 25px 15px 25px;
+    -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    -webkit-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    overflow:hidden;
+}
+li.box2 {
+    display: inline;
+    padding: 10px 10px;
+    border: 2px solid black;
+    width: 150px;
+    float: left;
+    text-align: center;
+    background-color: rgba(185, 183, 164, 0.897);
+    margin: 15px 25px 15px 25px;
+    height: 150px;
+    -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    -webkit-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    overflow:hidden;
+    background: linear-gradient(deepSkyBlue, Black);
+    background: moz-linear-gradient(deepSkyBlue, Black);   /*gradient background*/
+}
+li.box3 {
+    display: inline;
+    padding: 10px 10px;
+    border: 2px solid black;
+    width: 150px;
+    float: left;
+    text-align: center;
+    background-color: rgba(185, 183, 164, 0.897);
+    margin: 15px 25px 15px 25px;
+    height: 150px;
+    -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    -webkit-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
+    overflow:hidden;
+}
+footer {
+    background-color: rgba(185, 183, 164, 0.897);
 }
 #first {
     width: 100%;
