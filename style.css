@@ -1,3 +1,7 @@
+
+header, section, footer, nav, article, figure
+{
+    display block;}   
 body {
     font-family: Arial, Verdana, sans-serif;
     background-color: black;
@@ -17,7 +21,7 @@ H1.H1red {
 * {text-decoration:none}
 
 #header {
-    height: 100%;
+    width: 100%;
     background-image: url("images/124494-architecture-3d-dark-4k.jpg");
     overflow: auto;
 }
@@ -27,20 +31,20 @@ li.menu {
     padding: 30px;
 }
 #menu {
+        width: 100%;
         background-color:rgb(226, 215, 215);
         height: 100%;
-        margin: 15px;
         text-align: center;       
 }
 li.box {
     display: inline;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border: 2px solid black;
     width: 150px;
     float: left;
     text-align: center;
     background-color: rgba(185, 183, 164, 0.897);
-    margin: 10px auto 10px auto;
+    margin: 15px 25px 15px 25px;
     height: 150px;
     -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     -webkit-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
@@ -55,12 +59,12 @@ li.box {
 #first {
     width: 100%;
     overflow: auto;
-    background-color: whitesmoke;
+    background-color: #ffffffb4;
 }
 #second {
 width: 100%;
 overflow: auto;
-background-color: rgb(208, 240, 240);
+background-color: white;
 }
 blackquote {
     float: right;
@@ -76,7 +80,6 @@ blackquote {
 #third {
     width: 100%;  
     background-color: white;
-    padding: 10px 10px 10px 10px;
     overflow: hidden;
 }
 article {
@@ -84,32 +87,26 @@ article {
     width:100%;
     height: 800px;
 }
-p.half {
-    width: 50%;
-    height: 140px;
-    overflow: auto;
-    background-color: rgb(221, 201, 201);
-}
 #fourth {
     background-color:white;
     width: 100%;
-    height: 100%;
-    padding: 20px;
+    height: 200px;
+    
 }
 #fifth {
-    background-color:rgb(198, 243, 157);
+    background-color:rgb(194, 194, 194);
     width: 100%;
-    padding: 20px;
 }
 td.description {
     text-align: left;
     padding: 5px;
     margin: 0px;
     width: 800px;
+    text-align: justify;
 }
 #sixth {
-background-color: white;
-padding: 30px;
+    width: 100%;
+    background-color: white;
 }
 
 select {
@@ -146,4 +143,18 @@ ul.article3 {
     left:300px;
     width: 250px;
     background-color: cornflowerblue;
+}
+td.description::first-line {  /*pseudo-class-for ex.can change first line*/
+    color: rgb(184, 66, 91) ; 
+}
+td.description::first-letter {
+    color: rgb(119, 21, 21);
+    font-size: 2em;
+    font-family: 'Algierian';
+}
+td.description::selection {
+    background-color: crimson;
+}
+td.description::moz-selection {
+    background-color: crimson;
 }

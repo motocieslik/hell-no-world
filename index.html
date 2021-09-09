@@ -1,9 +1,11 @@
-<!--zmiany ciagle zmiany-->
 <!DOCTYPE html>
 <html>
 <head>
 <link href="style.css" type="text/css" rel="stylesheet" />
    <meta charset="UTF-8">
+<!--[if lt IE 9]>   <!--komentarz warunkowy,sprawdzający czy wersja przeglądarki jest wcześniejsza niż IE9, podkładka html5 ang. HTML5 shim-->
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -14,64 +16,19 @@
 
 <div id="menu">
 	<ul>
-	<li class="menu"><a href="index.html">back</li>
-	<li class="menu"><a href="">CSS</li>
-	<li class="menu"><a href="">puste</li>
-	<li class="menu"><a href="">puste</li>
+	<li class="menu"><a href="index.html">back</a></li>
+	<li class="menu"><a href="">CSS</a></li>
+	<li class="menu"><a href="">puste</a></li>
+	<li class="menu"><a href="">puste</a></li>
 	</ul>
 </div>
 
 <div id="first">
 <ul>
 	<li class="box"> 
-		<h2>Podstawy 1:</h2>
-		<p>
-		HTML-Hypertext Markup Language<br />
-		CCS-kaskadowy arkusz stylów <br/>
-		</p>
-	</li>
-	
-	<li class="box"> 
-		<p>Podstawowa stuktura:<br />
-		< !DOCTYPE html >< html >< head >< body ></p>
-	</li>
-	
-	<li class="box">  
-		<p>"<" lewy nawias kątowy <br />
-		"/"ukośnik</p>
-	</li>
-	
-	<li class="box"> 
-		<h2>Artybut</h2>
-		<p>
-		< p lang="pl" >Jezyk polski<br />
-		
-			lang->nazwa atrybutu<br/>
-			pl->wartośc artybutu	
-		</p>
-	</li>
-	
-	<li class="box"> 
-		<p>< title > - zamykany przez < / title ><br />
-		Tytuł strony w górze okna</p>
-	</li>
-	
-	<li class="box">  
-		<p>"Nagłówki: <br />
-		od < h1 >do < h6 >
-		Elementy puste to np < br / > nie maja zamkniecia
-		p-paragraf /zamykany <br />
-		b- bold <b>pogrubienie</b><br />
-		i -italic <i>kursywa</i><br />
-		
-		</p>
-	</li>
-
-
-	<li class="box"> 
 		<p>
 		br / brake(enter)<br />
-		hr / horizonatal line <br/>
+		hr / horizontal line <br/>
 		<hr />
 		< sup > mc<sup>2</sup><br />
 		< sub > H<sub>2</sub>O
@@ -79,11 +36,13 @@
 	</li>
 	
 	<li class="box"> 
-		<p>< strong > oznacza że wartośc <strong>ma wieksze znaczenie</strong>, pogrubienie, zamykany<br />
-		<hr />
-		< em > oznacza dodatkowy <em>nacisk</em>, kursywa zamykany</p>
+		<p>< strong > this mean something <strong>more</strong> CLOSED TYPE</p>
 	</li>
 	
+	<li class="box"> 
+		<p>< em > some <em>more attention</em>, italic,closed type</p>
+	</li>
+
 	<li class="box"> 
 		<p>
 		BLOCKQUOTE<br />
@@ -140,52 +99,46 @@
 
 <div id="third">
 
-	</a><img src="images/mountains.jpg" width="5%  alt="mountains"/>
+	</a>
+	<figure><img src="images/mountains.jpg" width="5%"  alt="mountains"/>
+		<figcaption>< figcaption ></figcaption>
+	</figure>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<hr />
 
-	<p><img src="images/mountains.jpg" width="5%  alt="mountains"/>
+	<p><img src="images/mountains.jpg" width="5%"  alt="mountains"/>
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<hr />
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <img src="images/mountains.jpg" width="5%  alt="mountains"/>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <img src="images/mountains.jpg" width="5%" alt="mountains"/>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<hr />
-
-	<p class="half"><img src="images/mountains.jpg" width="5%  alt="mountains" align="left"/>XLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<hr />
-
-	<p><img src="images/mountains.jpg" width="5%  alt="mountains" align="right"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 </div>
 
 <div id="fourth">
-		<hr />
-		<p>Można użyć komendy < figure > dla zdjęcia, który pozwoli uzyć podpisu zdjęciu < figcaption ></figcaption></p>
-	<figure>
-		<img src="images/mountains.jpg" width="5%  alt="mountains" />
-	<br />
-	<figcaption>Góry i doliny</figcaption>
-	</figure>
+
 </div>
 
 <hr />
 
 <div id="fifth">
 	<table>
-		<thead><h3>Opis</h3></thead>
+		<thead><h3>thead: Pseudo-classes</h3></thead>
 		<tr class="border">
 			<td><img src="images/mountains.jpg" width="20px"  alt="mountains"></td>
-			<td  class="description">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+			<td  class="description">Pseudo-class p.description::first-line. We have several tipes of pseudo-classess: first-line,first-letter, selection, before, after. Selection-selects portion of element that user selected. Before: inserts some content before an element. After: inserts some content ater an element.</td>
 			<td><img src="images/mountains.jpg" width="20px"  alt="mountains"></td>
-			<td class="description">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+			<td class="description">Drag&hold mouse on me. You will see crismon background color. It's ::selection pseudo class. I used td.description::selection
+			and moz-selection for mozilla: background-color:crismon;</td>
 		</tr>
 			<tr>
 			<td><img src="images/mountains.jpg" width="20px"  alt="mountains"></td>
-			<td  class="description">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+			<td  class="description">First letter was changed by pseudo-class:first-letter: gothic style font-family, new size and color.</td>
 			<td><img src="images/mountains.jpg" width="20px"  alt="mountains"></td>
-			<td  class="description">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+			<td  class="description">For example ::before can add picture before the text (like here, but here we used classical solutions).</td>
 		</tr>
 	</table>
+<hr />
 </div>
 <div id="sixth">
 	<form action="uzytkownicy.php">
