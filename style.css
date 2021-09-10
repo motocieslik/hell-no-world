@@ -56,7 +56,10 @@ li.box1 {
     padding: 10px 10px;
     width: 150px;
     height: 150px;
-    border: 2px solid black;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    -moz-background-clip: padding-box;
+    -webkit-backgroundclip: padding-box;
+    background-clip: padding-box; /* przezroczyste krawedzie*/
     border-radius: 90px 90px;  /* cicle*/
     float: left;
     text-align: center;
@@ -87,17 +90,17 @@ li.box2 {
 li.box3 {
     display: inline;
     padding: 10px 10px;
-    border: 2px solid black;
+    border: 7px dotted black; /*--kropkowana ramka*/
     width: 150px;
     float: left;
     text-align: center;
-    background-color: rgba(185, 183, 164, 0.897);
     margin: 15px 25px 15px 25px;
     height: 150px;
     -moz-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     -webkit-box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     box-shadow: 5px 5px 5px 5px rgb(119, 149, 177);
     overflow:hidden;
+    background: -moz-radial-gradient(rgb(168, 221, 119) 15%, rgb(214, 214, 125) 15%, white 60%);
 }
 footer {
     background-color: rgba(185, 183, 164, 0.897);
@@ -203,4 +206,14 @@ td.description::selection {
 }
 td.description::moz-selection {
     background-color: crimson;
+}
+p.article1opacity {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(197, 197, 197);
+    display: block;
+    z-index: 1;
+    position: relative; /* bez tego z-index nie zadziała*/
+    opacity: 0.6; /*opacity */
+    filter: alpha(opacity=60); /* opacity for ie*/
 }
