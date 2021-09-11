@@ -213,3 +213,12 @@ p.article1opacity {
     opacity: 0.6; /*opacity */
     filter: alpha(opacity=60); /* opacity for ie*/
 }
+#engine {
+    animation-name: engine;
+    animation-duration: 5s;
+}
+@keyframes engine {
+    0% {transform:scale(1)}
+    50% {transform:scale(0.5)}
+    100% {transform:scale(1)}
+}
