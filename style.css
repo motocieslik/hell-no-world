@@ -212,15 +212,33 @@ p.article1opacity {
     position: relative; /* bez tego z-index nie zadziała*/
     opacity: 0.6; /*opacity */
     filter: alpha(opacity=60); /* opacity for ie*/
+    text;
 }
+/*transformations*/
+
 #engine {
     transform: scale(0.5); /*zmniejszenie o połowe */
     transform-origin: 0% 0%;  /* przesunięcie obrazka do lewego rogu*/
     animation-name: engine; /*nazwa animacji*/
     animation-duration: 10s;
+    animation-delay: 2s;
 }
 @keyframes engine { 
     0% {transform:scale(0.5)}
     50% {transform:scale(0.1)}
     100% {transform:scale(0.5)}
+}
+/*CSS filters*/
+#eight {
+    width=100%
+    background-color: white;
+}
+img.classic {
+    width: 100px;
+    height: 100px
+}
+img.blur {
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%); /*szarości*/
 }
