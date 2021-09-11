@@ -214,12 +214,13 @@ p.article1opacity {
     filter: alpha(opacity=60); /* opacity for ie*/
 }
 #engine {
-    width:100%;
-    animation-name: engine;
+    transform: scale(0.5); /*zmniejszenie o połowe */
+    transform-origin: 0% 0%;  /* przesunięcie obrazka do lewego rogu*/
+    animation-name: engine; /*nazwa animacji*/
     animation-duration: 10s;
 }
-@keyframes engine {
-    0% {transform:scale(1)}
-    50% {transform:scale(0.5)}
-    100% {transform:scale(1)}
+@keyframes engine {  /* 
+    0% {transform:scale(0.5)}
+    50% {transform:scale(0.1)}
+    100% {transform:scale(0.5)}
 }
