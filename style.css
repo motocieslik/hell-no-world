@@ -214,8 +214,9 @@ p.article1opacity {
     filter: alpha(opacity=60); /* opacity for ie*/
 }
 #engine {
+    width:100%;
     animation-name: engine;
-    animation-duration: 5s;
+    animation-duration: 10s;
 }
 @keyframes engine {
     0% {transform:scale(1)}
